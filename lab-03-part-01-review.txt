@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+cd ~
 
 
 ==========
@@ -23,8 +23,9 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
+pwd
+v314-ent-015:~ student$ pwd
+/Users/student
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
@@ -65,16 +66,36 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
+curl -o mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
 
-
+v314-ent-015:~ student$ curl -o mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   162  100   162    0     0   4263      0 --:--:-- --:--:-- --:--:--  4263
+v314-ent-015:~ student$ 
 
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+tar mtec1002-lab-03.tar.gz
+
+v314-ent-015:~ student$ tar mtec1002-lab-03.tar.gz
+Usage:
+  List:    tar -tf <archive-filename>
+  Extract: tar -xf <archive-filename>
+  Create:  tar -cf <archive-filename> [filenames...]
+  Help:    tar --help
+v314-ent-015:~ student$ 
 
 
+
+
+
+v314-ent-015:~ student$ tar -xvf mtec1002-lab-03.tar.gz
+tar: Unrecognized archive format
+tar: Error exit delayed from previous errors.
 
 ==========
 8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
@@ -88,7 +109,7 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+ls mtec1002-lab-03.tar.gz
 
 
 ==========
